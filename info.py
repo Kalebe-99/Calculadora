@@ -8,6 +8,8 @@ class Info(QLabel):
         self.configStyle()
 
     def configStyle(self):
-        self.setStyleSheet(f'font-size: {SMALL_FONT_SIZE}px')
-        self.setAlignment(Qt.AlignmentFlag.AlignTop)
+        self.setStyleSheet(f'font-size: {SMALL_FONT_SIZE}px;'
+                           f'color: pink')
+        self.setAlignment(Qt.AlignmentFlag.AlignRight)
+        self.setContentsMargins(5, 10, 5, 5)
 
